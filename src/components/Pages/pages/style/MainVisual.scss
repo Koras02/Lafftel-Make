@@ -1,0 +1,47 @@
+.MainVisualWrapper {
+    width: 100%;
+    min-height: 800px;
+    // border:1px solid #000;
+    position:relative;
+    bottom:0px;
+    // z-index:1;
+    z-index:0;
+    // z-index:1;
+    overflow: hidden;
+    // background-color:gray;
+    // z-index:00;
+  
+}
+
+.Slider {
+    width:100%;
+    // max-width:1900px;
+    height:600px;
+    // z-index:auto;
+    // border:1px solid red;
+    // min-width:100%;
+    z-index:1;
+}
+
+.slider1 {
+    width:100%;
+    // border:1px solid blue;
+    height:700px;
+    outline:none;
+    z-index:999;
+    // position:absolute;
+
+}
+
+
+.slider2 {
+    width:100%;
+    // border:1px solid blue;
+    height:600px;
+    outline:none;
+    z-index:0;
+    // position:absolute;
+
+}
+
+ 
