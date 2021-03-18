@@ -1,12 +1,12 @@
- import React from 'react';
- import './App.css';
-import MainVisual from './components/MainVisual';
+import React from "react";
+import "./App.css";
+import MainVisual from "./components/MainVisual";
 
 function App() {
   return (
-    <> 
+    <>
       <MainVisual />
-   </>
+    </>
   );
 }
 
