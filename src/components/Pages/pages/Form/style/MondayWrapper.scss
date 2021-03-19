@@ -9,10 +9,13 @@
 }
 
 .MondayWrapperForm {
-  width: 2%;
+  width: 300px;
   height: 180px;
   // border: 1px solid red;
   display: inline-flex;
+  float: left;
+  margin: 0px;
+  padding: 0px;
   margin-left: 0px;
 }
 
@@ -46,7 +49,7 @@
   text-align: left;
   margin: 50px 120px 0px 40px;
   position: relative;
-  left: 30px;
+  left: 40px;
   bottom: 50px;
 }
 
@@ -56,7 +59,7 @@
   text-align: left;
   margin: 50px 120px 0px 40px;
   position: relative;
-  left: 60px;
+  left: 100px;
   bottom: 50px;
 }
 .p4 {
@@ -65,7 +68,7 @@
   text-align: left;
   margin: 50px 120px 0px 40px;
   position: relative;
-  left: 100px;
+  left: 150px;
   bottom: 50px;
 }
 .p5 {
@@ -74,7 +77,7 @@
   text-align: left;
   margin: 50px 120px 0px 40px;
   position: relative;
-  left: 120px;
+  left: 180px;
   bottom: 50px;
 }
 
@@ -84,6 +87,6 @@
   text-align: left;
   margin: 50px 120px 0px 40px;
   position: relative;
-  left: 100px;
+  left: 140px;
   bottom: 50px;
 }
