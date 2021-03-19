@@ -1,62 +1,216 @@
-/* eslint-disable no-undef */
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
-import { HomeData1 } from "./Form/data/Data";
-import Mon from "./Form/Mon";
-import { Click, List1 } from "./style/MainVisualStyle";
+import React from "react";
+
+import ListForm from "./Form/ListForm";
 
 import "./style/NewAnime.scss";
 
-function NewAnime() {
-  const [comp, setComp] = useState([]);
-  const [click, SetClick] = useState(false);
+class NewAnime extends React.Component {
+  render() {
+    return (
+      <>
+        <div className="tabs">
+          <h1>요일별</h1>
+          <Tabs className="Tab12">
+            <Tab label="월" className="Tab12">
+              <ListForm />
+            </Tab>
+            <Tab label="화">
+              <div className="Tab1">
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <div className="form">
+                  <h1>1</h1>
+                </div>
+              </div>
+            </Tab>
+            <Tab label="수">
+              <div className="Tab1">
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <div className="form">
+                  <h1>1</h1>
+                </div>
+              </div>
+            </Tab>
+            <Tab label="목">
+              <div className="Tab1">
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <div className="form">
+                  <h1>1</h1>
+                </div>
+              </div>
+            </Tab>
+            <Tab label="금">
+              <div className="Tab1">
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <img
+                  className="Image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm"
+                />
+                <div className="form">
+                  <h1>1</h1>
+                </div>
+              </div>
+            </Tab>
+          </Tabs>
+        </div>
+      </>
+    );
+  }
+}
 
-  const handleClick = () => SetClick(!click);
+class Tabs extends React.Component {
+  state = {
+    activeTab: this.props.children[0].props.label,
+  };
+  changeTab = (tab) => {
+    this.setState({ activeTab: tab });
+  };
+  render() {
+    let content;
+    let buttons = [];
+    return (
+      <div>
+        {React.Children.map(this.props.children, (child) => {
+          buttons.push(child.props.label);
+          if (child.props.label === this.state.activeTab)
+            content = child.props.children;
+        })}
 
-  return (
-    <div className="NewAnimeWrapper">
-      <h1 className="NewAnimeH1">요일별 신작</h1>
-      <div className="UploadLink">
-        <button className="button1">
-          <a href="#" className="button1Link">
-            업로드 공지
-          </a>
-        </button>
-        <ul className="toggle" click={click}>
-          <Click
-            onClick={() => setComp(<Mon {...HomeData1} />)}
-            className="on"
-            spy={true}
-            click={click}
-          >
-            <List1 className="list_toggle" onClick={handleClick}>
-              월
-            </List1>
-          </Click>
-          <Click
-            onClick={() => setComp(<div>1</div>)}
-            className="on"
-            spy={true}
-          >
-            <List1 className="list_toggle">화</List1>
-          </Click>
-          <Click>
-            <List1 className="list_toggle">수</List1>
-          </Click>
-          <Click>
-            <List1 className="list_toggle">목</List1>
-          </Click>
-          <Click>
-            <List1 className="list_toggle">토</List1>
-          </Click>
-          <Click>
-            <List1 className="list_toggle">일</List1>
-          </Click>
-          <main children={comp} />
-        </ul>
+        <TabButtons
+          activeTab={this.state.activeTab}
+          buttons={buttons}
+          changeTab={this.changeTab}
+        />
+        <div className="tab-content">{content}</div>
       </div>
+    );
+  }
+}
+
+const TabButtons = ({ buttons, changeTab, activeTab }) => {
+  return (
+    <div className="tab-buttons">
+      {buttons.map((button) => {
+        return (
+          <button
+            className={button === activeTab ? "active" : ""}
+            onClick={() => changeTab(button)}
+          >
+            {button}
+          </button>
+        );
+      })}
     </div>
   );
-}
+};
+
+const Tab = (props) => {
+  return <React.Fragment>{props.children}</React.Fragment>;
+};
 
 export default NewAnime;

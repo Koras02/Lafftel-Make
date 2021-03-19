@@ -13,11 +13,28 @@ export const Click = styled.div`
   margin: 15px;
   width: 40px;
   height: 40px;
+  // border: 1px solid #000;
+  border-radius: 100%;
+  padding: 12px;
+
+  text-align: center;
+  background: blue;
+`;
+
+export const Click2 = styled.div`
+  display: inline-flex;
+  margin: 15px;
+  width: 40px;
+  height: 40px;
   // border:1px solid #000;
   border-radius: 100%;
   padding: 10px;
   text-align: center;
-  background: ${({ click }) => (click ? "red" : "blue")};
+  // background: ${({ click }) => (click ? "yellow" : "blue")};
+  // transition: 10s;
+  &.active {
+    background: red;
+  }
 `;
 
 export const List1 = styled.div`
@@ -28,3 +45,5 @@ export const List1 = styled.div`
   font: bold 18px/24px arial;
   color: #fff;
 `;
+
+export const Tabs = styled.div``;
