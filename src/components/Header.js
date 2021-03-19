@@ -1,37 +1,53 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
-import '../App.css'
-import './style/Header.scss'
+import React, { useEffect, useState } from "react";
+import "../App.css";
+import "./style/Header.scss";
+import {
+  Form,
+  HeaderWrapper,
+  LaftelH1,
+  LaftelLink,
+  LaftelLoginLink,
+  LafterUl,
+} from "./style/HeaderStyle";
 
-function Header() {
-     return (
-          <header className="header">
-              <h1 className="LaftelH1">LAFTEL</h1>
-              <ul classNmae="LaftelUl">
-                  <a href="" className="Laftelli">
-                      태그검색
-                  </a>
-                  <a href="" className="Laftelli">
-                      요일별 신작
-                  </a>
-                  <a href="" className="Laftelli">
-                      테마추천
-                  </a>
-                  <a href="" className="Laftelli">
-                      맴버십
-                  </a>
-              </ul>
-              <form className="searchForm">
-                 <input type="search" className="search">
+export function Header() {
+  const [scrollNav, setScrollNav] = useState(true);
 
-                 </input>
-                 <a href="" className="LaftelSearchLink">
-                     로그인/가입
-                 </a>
-              </form>
-          </header>
-     );
- }
+  const changeNav = () => {
+    if (window.scrollY > 80) {
+      setScrollNav(false);
+    } else setScrollNav(true);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
 
+  return (
+    <HeaderWrapper className="header" scrollNav={scrollNav}>
+      <LaftelH1 scrollNav={scrollNav}>LAFTEL</LaftelH1>
+      <LafterUl scrollNav={scrollNav}>
+        <LaftelLink scrollNav={scrollNav} to="">
+          태그검색
+        </LaftelLink>
+        <LaftelLink scrollNav={scrollNav} to="">
+          요일별 신작
+        </LaftelLink>
+        <LaftelLink scrollNav={scrollNav} to="">
+          테마추천
+        </LaftelLink>
+        <LaftelLink scrollNav={scrollNav} to="">
+          멤버십
+        </LaftelLink>
+      </LafterUl>
+      <Form scrollNav={scrollNav}>
+        <input type="search" className="search"></input>
+        <LaftelLoginLink to="" scrollNav={scrollNav}>
+          로그인/가입
+        </LaftelLoginLink>
+      </Form>
+    </HeaderWrapper>
+  );
+}
 
- export default Header;
+export default Header;
